@@ -10,7 +10,9 @@ import EssayForm from './components/EssayForm'
 import FlavorForm from './components/FlavorForm'
 import Reservation from './components/Reservation'
 import Calculator from './components/Calculator'
+import WelcomeDialog from './components/WelcomeDialog'
+import Apps from './components/App'
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<Calculator />,document.getElementById('root'));
+ReactDOM.render(<Apps />,document.getElementById('root'));
 registerServiceWorker();
