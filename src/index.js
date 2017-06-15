@@ -13,6 +13,8 @@ import Calculator from './components/Calculator'
 import WelcomeDialog from './components/WelcomeDialog'
 import Apps from './components/App'
 import FilterableProductTable from './components/FilterableProductTable'
+//我的router组件
+import Router from './router/index'
 
 var PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -23,6 +25,6 @@ var PRODUCTS = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
-// ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<FilterableProductTable products={PRODUCTS}/>,document.getElementById('root'));
+ReactDOM.render(<Router />, document.getElementById('root'));
+// ReactDOM.render(<FilterableProductTable products={PRODUCTS}/>,document.getElementById('root'));
 registerServiceWorker();
