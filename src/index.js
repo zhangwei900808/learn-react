@@ -15,6 +15,7 @@ import Apps from './components/App'
 import FilterableProductTable from './components/FilterableProductTable'
 //我的router组件
 import Router from './router/index'
+import ParamsExample from './router/ParamsExample'
 
 var PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -25,6 +26,6 @@ var PRODUCTS = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
-ReactDOM.render(<Router />, document.getElementById('root'));
+ReactDOM.render(<ParamsExample />, document.getElementById('root'));
 // ReactDOM.render(<FilterableProductTable products={PRODUCTS}/>,document.getElementById('root'));
 registerServiceWorker();
