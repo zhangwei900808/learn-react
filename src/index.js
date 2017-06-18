@@ -14,8 +14,11 @@ import WelcomeDialog from './components/WelcomeDialog'
 import Apps from './components/App'
 import FilterableProductTable from './components/FilterableProductTable'
 //我的router组件
-import Router from './router/index'
+import Router from './router/Basic'
 import ParamsExample from './router/ParamsExample'
+import AuthExample from './router/AuthExample'
+import CustomLinkExample from './router/CustomLinkExample'
+import PreventingTransitionsExample from './router/PreventingTransitionsExample'
 
 var PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -26,6 +29,6 @@ var PRODUCTS = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
-ReactDOM.render(<ParamsExample />, document.getElementById('root'));
+ReactDOM.render(<PreventingTransitionsExample />, document.getElementById('root'));
 // ReactDOM.render(<FilterableProductTable products={PRODUCTS}/>,document.getElementById('root'));
 registerServiceWorker();
