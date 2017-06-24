@@ -19,6 +19,7 @@ import ParamsExample from './router/ParamsExample'
 import AuthExample from './router/AuthExample'
 import CustomLinkExample from './router/CustomLinkExample'
 import PreventingTransitionsExample from './router/PreventingTransitionsExample'
+import NoMatchExample from './router/NoMatchExample'
 
 var PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -29,6 +30,6 @@ var PRODUCTS = [
   {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
 ];
 
-ReactDOM.render(<PreventingTransitionsExample />, document.getElementById('root'));
+ReactDOM.render(<NoMatchExample />, document.getElementById('root'));
 // ReactDOM.render(<FilterableProductTable products={PRODUCTS}/>,document.getElementById('root'));
 registerServiceWorker();
